@@ -14,6 +14,7 @@
     "@prismicio/react": "^2.1.2",
     "@prismicio/slice-simulator-react": "^0.2.0",
     "next": "10.2.3",
+    "prismic-javascript": "^3.0.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "sass": "^1.49.9"
