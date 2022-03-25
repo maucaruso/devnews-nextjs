@@ -1,4 +1,5 @@
 import { GetServerSideProps } from 'next';
+import SEO from '../components/SEO';
 //import { useEffect, useState } from 'react';
 
 interface Post {
@@ -23,6 +24,7 @@ export default function Home({ posts }: HomeProps) {
 
   return (
     <div>
+      <SEO title="Home" />
       <h1>Posts</h1>
       <ul>
         {posts.map(post => (
