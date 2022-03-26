@@ -6,7 +6,7 @@ import { getPrismClient } from '../../services/prismic';
 const post = {
   slug: 'test-new-post',
   title: 'title for new post',
-  content: '<p>post excerpt</p>',
+  content: 'post excerpt',
   updateAt: '25 de dezembro de 2021',
 };
 
@@ -34,7 +34,7 @@ describe('Post page', () => {
       getByUID: jest.fn().mockResolvedValueOnce({
         data: {
           title: [{ type: 'heading', text: 'My new Post' }],
-          content: [{ type: 'paragraph', text: '<p>post excerpt</p>' }],
+          content: [{ type: 'paragraph', text: 'post excerpt' }],
         },
         last_publication_date: '12-25-2021',
       }),
